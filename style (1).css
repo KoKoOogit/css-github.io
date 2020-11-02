@@ -1,11 +1,9 @@
-/* 400 800 900 */
+/* 400 700 */
 
-body{
+*{
     font-family: 'Kanit', sans-serif;
 }
-a{
-    color:#f7b728;
-}
+
 .my-container{
     background-color: bisque;
 }
@@ -14,7 +12,7 @@ a{
 
 .navbar-brand{
     color:#007bffcc;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 25px;
 }
 /* hero */

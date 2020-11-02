@@ -1,11 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELLO</title>
-</head>
-<body>
-    <h1>Hello Ko KO OO</h1>
-</body>
-</html>
+<style>
+	input{
+		float:left;
+	}
+</style>
+<p>ခေါင်းကိုက်ခြင်း</p><input type="checkbox" id="c1">
+<p>အနံ့မရခြင်း သို့ အရသာ မရခြင်း</p><input type="checkbox" id="c2">
+<p>ဖျားခြင်း</p><input type="checkbox" id="c3">
+<p>အောက်ဆီဂျင်ကျခြင်း</p><input type="checkbox" id="c4">
+<p>လည်ချောင်းနာခြင်း</p><input type="checkbox" id="c5">
+<p>ဝမ်းပျက်ခြင်း</p><button  onclick="myfunction()">TEST</button>
+
+<p id="result"></p>
+
+<script>
+	let localnum = 0;
+    
+    let fever = document.getElementById("c1");
+    let nosmell = document.getElementById("c2");
+    let headache = document.getElementById("c3");
+    let butt = document.getElementById("c4");
+    let friend = document.getElementById("c5");
+
+    function myfunction() {
+    	if (fever.checked) {
+    		localnum = localnum + 20;
+    	}
+    	if (nosmell.checked) {
+    		localnum = localnum + 20;
+    	}
+    	if (headache.checked) {
+    		localnum = localnum + 20;
+    	}
+    	if (butt.checked) {
+    		localnum = localnum + 20;
+    	}
+    	if (friend.checked) {
+    		localnum = localnum + 20;
+    	}
+    	document.getElementById("result").innerHTML = `YOUR CHANCE TO BE COVID19 IS ${localnum}`
+    	localnum = 0
+
+    }
+	</script>
